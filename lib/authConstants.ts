@@ -1,0 +1,1 @@
+export const RESET_PASSWORD_COOLDOWN_SECONDS = 30;

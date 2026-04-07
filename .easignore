@@ -1,0 +1,4 @@
+# Exclude Windows system and protected folders
+AppData
+node_modules
+.git
