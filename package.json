@@ -1,7 +1,7 @@
 {
   "name": "car-cab-org",
   "version": "1.0.0",
-  "main": "expo-router/entry",
+  "main": "App.js",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "eas build --platform android --profile development",
@@ -13,36 +13,39 @@
     "build:ios:release": "eas build --platform ios --profile production"
   },
   "dependencies": {
-    "@expo/ngrok": "^4.1.0",
-    "@react-native-async-storage/async-storage": "^2.2.0",
-    "@react-navigation/bottom-tabs": "^7.15.5",
-    "@react-navigation/native": "^7.1.33",
-    "expo": "~55.0.12",
-    "expo-camera": "~55.0.14",
-    "expo-constants": "~55.0.12",
-    "expo-dev-client": "~55.0.23",
-    "expo-image-picker": "~55.0.17",
-    "expo-linking": "~55.0.11",
-    "expo-local-authentication": "~55.0.12",
-    "expo-location": "~55.1.7",
-    "expo-notifications": "~55.0.17",
-    "expo-router": "~55.0.11",
-    "expo-screen-orientation": "~55.0.12",
-    "expo-status-bar": "~55.0.5",
+    "@expo/cli": "55.0.23",
+    "@expo/log-box": "55.0.8",
+    "@expo/metro-runtime": "55.0.9",
+    "@react-navigation/bottom-tabs": "^7.15.9",
+    "@react-navigation/native": "^7.2.2",
+    "@react-navigation/stack": "^7.8.10",
+    "expo": "55.0.14",
+    "expo-dev-client": "^55.0.27",
+    "expo-file-system": "~55.0.16",
+    "expo-linking": "~55.0.7",
+    "expo-location": "~55.1.2",
+    "expo-notifications": "~55.0.12",
+    "expo-screen-orientation": "~55.0.8",
+    "expo-status-bar": "~55.0.4",
     "firebase": "^12.10.0",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "react-native": "^0.83.2",
-    "react-native-gesture-handler": "^2.16.2",
+    "react": "^19.2.0",
+    "react-native": "^0.83.4",
+    "react-native-gesture-handler": "~2.12.0",
     "react-native-maps": "1.27.2",
-    "react-native-safe-area-context": "~5.6.2",
-    "react-native-screens": "~4.23.0",
-    "react-native-web": "^0.21.2"
+    "react-native-safe-area-context": "^5.7.0",
+    "react-native-screens": "4.21.0",
+    "react-native-vector-icons": "^10.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@expo/cli": "^55.0.22",
+    "@react-native/metro-config": "^0.85.0",
     "@types/react": "~19.2.10"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "react-native-screens": "4.21.0"
+  },
+  "scripts": {
+    "postinstall": "npx npm-force-resolutions"
+  }
 }
