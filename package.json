@@ -44,8 +44,5 @@
   "private": true,
   "resolutions": {
     "react-native-screens": "4.21.0"
-  },
-  "scripts": {
-    "postinstall": "npx npm-force-resolutions"
   }
 }
