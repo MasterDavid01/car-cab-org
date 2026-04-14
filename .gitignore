@@ -42,3 +42,6 @@ GoogleService-Info.plist
 
 # typescript
 *.tsbuildinfo
+
+# local recovery backups
+*.step*.bak
